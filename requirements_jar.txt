@@ -1,0 +1,5 @@
+aws-java-sdk-bundle-1.12.262.jar
+clickhouse-jdbc-0.4.6.jar
+commons-compress-1.20.jar
+commons-net-3.10.0.jar
+hadoop-aws-3.3.4.jar

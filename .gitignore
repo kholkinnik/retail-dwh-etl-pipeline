@@ -1,0 +1,30 @@
+# Окружение и секреты
+.env
+*.env
+
+# Python
+venv/
+env/
+ENV/
+.Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Зависимости и сборки
+jars/
+logs/
+grafana_data/
+target/
+
+# Контейнеры - только содержимое
+./containers/
+
+
+# IDE и ОС
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

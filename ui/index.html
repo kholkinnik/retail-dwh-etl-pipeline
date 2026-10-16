@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Platform UI</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #94a3b8;
+      margin-bottom: 32px;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 24px;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+
+    a:hover {
+      transform: translateY(-4px);
+      border-color: #38bdf8;
+      background: #243449;
+    }
+
+    .service {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .url {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 13px;
+      color: #38bdf8;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 13px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Data Platform UI</h1>
+    <p>Быстрый доступ к сервисам учебного стенда</p>
+
+    <section class="links">
+      <a href="http://localhost:8080" target="_blank" rel="noopener">
+        <div class="service">Airflow</div>
+        <div class="description">Оркестрация DAG-процессов и ETL-задач</div>
+        <span class="url">localhost:8080</span>
+      </a>
+
+      <a href="http://localhost:3000" target="_blank" rel="noopener">
+        <div class="service">Grafana</div>
+        <div class="description">Дашборды и визуализация метрик</div>
+        <span class="url">localhost:3000</span>
+      </a>
+
+      <a href="http://localhost:9001" target="_blank" rel="noopener">
+        <div class="service">MinIO Console</div>
+        <div class="description">Управление S3-бакетами и объектами</div>
+        <span class="url">localhost:9001</span>
+      </a>
+    </section>
+
+    <footer>
+      Airflow: airflow / airflow &nbsp;•&nbsp; Grafana: admin / admin &nbsp;•&nbsp; MinIO: admin / StrongPassword123!
+    </footer>
+  </main>
+</body>
+</html>
